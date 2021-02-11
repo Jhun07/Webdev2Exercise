@@ -40,35 +40,18 @@
 
     <script>
 
-        let bold_item;
-        window.onload = get_items();
+        function myfunction() {
+            for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
+                document.getElementsByTagName('b')[index].style.color = "blue"
 
-        function get_items(){
-            bold_item = document.getElementsByTagName('b');
-        }
-        function myfunction(){
-            for (let i = 0 ; i < bold_item.length; i++){
-                  bold_item[i].style.color = "red";
             }
         }
-        function mouseout(){
-            for (let i = 0 ; i < bold_item.length; i++){
-                  bold_item[i].style.color = "black"
+        function mouseout() {
+            for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
+                document.getElementsByTagName('b')[index].style.color = "yellow"
+
             }
         }
-
-        // function myfunction() {
-        //     for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
-        //         document.getElementsByTagName('b')[index].style.color = "blue"
-
-        //     }
-        // }
-        // function mouseout() {
-        //     for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
-        //         document.getElementsByTagName('b')[index].style.color = "yellow"
-
-        //     }
-        // }
 
     </script>
 </body>
