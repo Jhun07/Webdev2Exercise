@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q2 Ex.1</title>
     <style>
-        p{
+        p {
             font-size: larger;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
     </style>
 </head>
+
 <body>
     <h1>My College Life</h1>
     <p>
-        Eversince, I always thought that college life is <b>easy</b> and <b>fun</b> . Choosing your <b>desired career </b> is one way ticket to be succesful. 
-        I am so excited to went through these stages and experience those <b>unkabogable memories</b> they've said. When <b>PN</b> chose me to be part of their scholarship, it's like a <b>dream come true</b> to me since I was able to continue my <b>education</b>.
-        Considering the situation that my <b>family</b> has. Yes, I am one of those <b>underprivelged students</b> who used <b>capabilites</b> as a ticket to achieve <b>college education</b>. To inform everyone, PN caters all the necessities except for the <b>allowance</b>.
-        I am so <b>blessed</b> to be part of this opportunity. Basically, PN only provides <b>Computer Certificate Of Technology</b>. One of the in demand course nowadays.
-        To clarify, <b>IT</b> is really not my first choice and never been my dream course before but I am <b>destined</b> to here. At first, I keep on asking myself where am I? What should I have done? Why all these things happening to me rightnow? Yes, that's all I thought once then. 
-        But everything was <b>changed</b> after I realized <b>something</b>. This qouted line: "Kaya man gani nila! Ako pa kaha! Kulang lng jud guro ko ug practice." So I changed my <b>study habits</b> and I figure out these <b>strategies</b> really work. Thankfully, I am now starting <b>loving</b> IT.
+        Eversince, I always thought that college life is <b>easy</b> and <b>fun</b> . Choosing your <b>desired career
+        </b> is one way ticket to be succesful.
+        I am so excited to went through these stages and experience those <b>unkabogable memories</b> they've said. When
+        <b>PN</b> chose me to be part of their scholarship, it's like a <b>dream come true</b> to me since I was able to
+        continue my <b>education</b>.
+        Considering the situation that my <b>family</b> has. Yes, I am one of those <b>underprivelged students</b> who
+        used <b>capabilites</b> as a ticket to achieve <b>college education</b>. To inform everyone, PN caters all the
+        necessities except for the <b>allowance</b>.
+        I am so <b>blessed</b> to be part of this opportunity. Basically, PN only provides <b>Computer Certificate Of
+            Technology</b>. One of the in demand course nowadays.
+        To clarify, <b>IT</b> is really not my first choice and never been my dream course before but I am
+        <b>destined</b> to here. At first, I keep on asking myself where am I? What should I have done? Why all these
+        things happening to me rightnow? Yes, that's all I thought once then.
+        But everything was <b>changed</b> after I realized <b>something</b>. This qouted line: "Kaya man gani nila! Ako
+        pa kaha! Kulang lng jud guro ko ug practice." So I changed my <b>study habits</b> and I figure out these
+        <b>strategies</b> really work. Thankfully, I am now starting <b>loving</b> IT.
 
 
     </p>
+    <button onmouseover="myfunction()" onmouseout="mouseout()">HIGHLIGHTER</button>
+
+    <script>
+
+        let bold_item;
+        window.onload = get_items();
+
+        function get_items(){
+            bold_item = document.getElementsByTagName('b');
+        }
+        function myfunction(){
+            for (let i = 0 ; i < bold_item.length; i++){
+                  bold_item[i].style.color = "red";
+            }
+        }
+        function mouseout(){
+            for (let i = 0 ; i < bold_item.length; i++){
+                  bold_item[i].style.color = "black"
+            }
+        }
+
+        // function myfunction() {
+        //     for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
+        //         document.getElementsByTagName('b')[index].style.color = "blue"
+
+        //     }
+        // }
+        // function mouseout() {
+        //     for (let index = 0; index < document.getElementsByTagName('b').length; index++) {
+        //         document.getElementsByTagName('b')[index].style.color = "yellow"
+
+        //     }
+        // }
+
+    </script>
 </body>
+
 </html>
