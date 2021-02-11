@@ -10,9 +10,15 @@
         margin: 1px solid brown ;
         margin-left: 30%;
         margin-right: 50%;
+        border: 1px black solid;
     }
     label{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: cadetblue;
+    }
+    #style{
+        font-family: Arial, Helvetica, sans-serif;
+        color: chocolate;
     }
 </style>
 
@@ -20,16 +26,16 @@
 
 <body>
     <h1 style="margin-left: 30%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Moya's Calculator</h1>
-    <div id="design">
-    <label>1st Number: </label>
+    <div id="design"><br>
+    <label>&nbsp 1st Number </label> 
     <input type="number" value="" id="1stnumber"><br><br>
-    <label>2nd Number: </label>
-    <input type="number" value="" id="2ndnumber"><br><br>
-    <input type="submit" value="+" onclick="return calculate()"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-    <input type="submit" value="-" onclick="return calculate2()"> &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-    <input type="submit" value="*" onclick="return calculate3()"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
-    <input type="submit" value="/" onclick="return calculate4()"><hr>
-    <label>Result:</label>
+    <label>&nbsp 2nd Number </label>
+    <input type="number" value="" id="2ndnumber"><br><br>&nbsp
+    <input type="submit" value="+" id="style" onclick="return calculate()"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <input type="submit" value="-" id="style" onclick="return calculate2()"> &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp 
+    <input type="submit" value="*" id="style" onclick="return calculate3()"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+    <input type="submit" value="/" id="style" onclick="return calculate4()"><hr>
+    <label>&nbsp Result:</label>
     <span id="result"></span><hr>
  </div>
     <script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 3</title>
+    <style>
+        #design{
+            margin: 1px solid brown ;
+            margin-left: 30%;
+            margin-right: 50%;
+            border: 1px black solid;
+        }
+        label{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-left: 30%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Moya's Calculator</h1>
+    <div id="design"><br>
+    <label>&nbsp 1st Integer: </label>
+    <input type="number" value="" id="1stnumber"><br><br>
+    <label> &nbsp 2nd Integer: </label>
+    <input type="number" value="" id="2ndnumber"><br><br>&nbsp
+    <input type="submit" value="CHECKING:" onclick="return calculate()"> <hr>
+    <label>&nbsp Result:</label>
+    <span id="result"></span><hr>
+ </div>
+    <script>
+         function calculate(){
+            var firstN=Number(document.getElementById('1stnumber').value);
+            var secondN=Number(document.getElementById('2ndnumber').value);
+            if(firstN>secondN){
+                prompt(document.getElementById('result').innerHTML=(parseInt(firstN)));}
+            else if (firstN<secondN){
+                prompt(document.getElementById('result').innerHTML=(parseInt(secondN)));
+            }else{
+                prompt(document.getElementById('result').innerHTML=(parseInt(firstN)+1));
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
